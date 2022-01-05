@@ -2,3 +2,7 @@
   max-width: 600px;
   margin: 30px auto;
 }
+
+.App .card {
+  padding: 20px;
+}

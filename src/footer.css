@@ -1,11 +1,11 @@
 footer {
   font-size: 12px;
   margin: 10px 0;
+  text-align: center;
 }
 
 footer .link {
   text-decoration: none;
-  transition: all 150ms ease-in-out;
 }
 footer .link:hover {
   text-decoration: underline;

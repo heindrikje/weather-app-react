@@ -1,12 +1,15 @@
 import React from "react";
 import "./App.css";
+import Weather from "./Weather";
 import Footer from "./Footer";
 
 export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <p>Hello from App </p>
+        <div className="card">
+          <Weather />
+        </div>
         <Footer />
       </div>
     </div>
@@ -15,4 +18,3 @@ export default function App() {
 
 // Matt hat nach container noch:
 // <Weather defaultCity="New York" />
-// er importiert nur Weather.js
