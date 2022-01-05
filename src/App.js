@@ -1,23 +1,18 @@
+import React from "react";
 import "./App.css";
+import Footer from "./Footer";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <p>Hello from App </p>
+        <Footer />
+      </div>
     </div>
   );
 }
 
-export default App;
+// Matt hat nach container noch:
+// <Weather defaultCity="New York" />
+// er importiert nur Weather.js
