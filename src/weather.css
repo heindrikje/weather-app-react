@@ -1,3 +1,16 @@
+.SearchForm .search-bar {
+  background: #dbe2ef;
+}
+
+.SearchForm .search-bar::placeholder {
+  color: #112d4e;
+}
+
+.SearchForm .search-button {
+  color: #112d4e;
+  background: #dbe2ef;
+}
+
 .Weather .mainInfo {
   margin: 20px 20px 30px 0;
   border: 2px solid #dbe2ef;
@@ -22,6 +35,9 @@
 .Weather .weatherDetails {
   padding: 0;
   margin-bottom: 15px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 18px;
 }
 
 .Weather .forecast {
