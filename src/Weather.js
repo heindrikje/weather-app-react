@@ -2,6 +2,7 @@ import React from "react";
 import SearchForm from "./SearchForm";
 import WeatherDetails from "./WeatherDetails";
 import Forecast from "./Forecast";
+import ForecastIcon from "./ForecastIcon";
 import "./weather.css";
 
 export default function Weather() {
@@ -23,12 +24,15 @@ export default function Weather() {
           <div className="description">Partly cloudy</div>
         </div>
       </div>
-      <div className="row">
+      <div className="row align-items-center">
         <div className="col-6 weatherDetails">
           <WeatherDetails />
         </div>
-        <div className="col-6 forecast">
+        <div className="col-3 forecast">
           <Forecast />
+        </div>
+        <div className="col-3 forecastIcon">
+          <ForecastIcon />
         </div>
       </div>
     </div>

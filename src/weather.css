@@ -1,24 +1,33 @@
 .Weather .mainInfo {
-  margin: 20px 20px 40px 0;
+  margin: 20px 20px 30px 0;
+  border: 2px solid #dbe2ef;
+}
+.Weather h1 {
+  font-size: 40px;
 }
 
 .Weather .iconAndDescription {
   margin: 20px 0 40px 0;
+  text-align: center;
 }
 
 .Weather .icon {
-  text-align: center;
   font-size: 80px;
 }
 
 .Weather .description {
-  text-align: center;
+  font-size: 18px;
 }
 
 .Weather .weatherDetails {
-  padding-right: 0;
+  padding: 0;
+  margin-bottom: 15px;
 }
 
 .Weather .forecast {
-  padding-left: 0;
+  padding: 0;
+}
+
+.Weather .forecastIcon {
+  padding: 0;
 }

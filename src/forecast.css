@@ -1,6 +1,8 @@
-.Forecast .forecastDays {
+.Forecast .forecastDay {
   text-align: center;
+  margin-bottom: 12px;
+  font-size: 14px;
 }
 .Forecast {
-  border-left: 2px solid black;
+  border-left: 2px solid #dbe2ef;
 }

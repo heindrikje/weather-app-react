@@ -1,15 +1,16 @@
 import React from "react";
+import "./searchForm.css";
 
 export default function SearchForm() {
   return (
-    <div>
+    <div className="SearchForm">
       <form>
         <div className="row">
           <div className="col-9">
             <input
               type="search"
               placeholder="Enter a city"
-              className="form-control"
+              className="form-control search-bar"
               autoFocus="on"
             />
           </div>
@@ -17,7 +18,7 @@ export default function SearchForm() {
             <input
               type="submit"
               value="Search 🔎"
-              className="btn btn-secondary w-100"
+              className="btn btn-secondary w-100 search-button"
             />
           </div>
         </div>
