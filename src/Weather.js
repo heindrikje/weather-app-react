@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import SearchForm from "./SearchForm";
+import Date from "./Date";
 import Forecast from "./Forecast";
 import ForecastIcon from "./ForecastIcon";
 import "./weather.css";
@@ -9,11 +10,10 @@ export default function Weather(props) {
   const [info, setInfo] = useState({ loaded: false });
 
   function showInfo(response) {
-    console.log(response.data);
-
     setInfo({
       loaded: true,
       city: response.data.name,
+      date: new Date(response.data.dt * 1000),
       temp: Math.round(response.data.main.temp),
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
@@ -32,9 +32,7 @@ export default function Weather(props) {
             <div className="card mainInfo">
               <h2>{info.city}</h2>
               <h1>{info.temp}°C</h1>
-              <div>
-                Wed, 05.01.21 <br /> 13:29
-              </div>
+              <Date date={info.date} />
             </div>
           </div>
           <div className="col-6 iconAndDescription">
