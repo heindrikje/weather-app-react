@@ -13,7 +13,7 @@ export default function Date(props) {
   let year = props.date.getFullYear();
   return (
     <div className="Date">
-      {day}, {currentDate}.{month}.{year} <br /> {hours}:{minutes}
+      {day}, {currentDate}.{month}.{year} <br /> Updated at {hours}:{minutes}
     </div>
   );
 }

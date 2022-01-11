@@ -1,4 +1,5 @@
 import React from "react";
+import Temp from "./Temp";
 import Date from "./Date";
 import WeatherIcon from "./WeatherIcon";
 import Forecast from "./Forecast";
@@ -12,7 +13,7 @@ export default function Weather(props) {
         <div className="col-6">
           <div className="card mainInfo">
             <h2>{props.data.city}</h2>
-            <h1>{props.data.temp}°C</h1>
+            <Temp celsius={props.data.temp} />
             <Date date={props.data.date} />
           </div>
         </div>
