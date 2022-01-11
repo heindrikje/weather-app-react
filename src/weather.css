@@ -7,12 +7,8 @@
 }
 
 .Weather .iconAndDescription {
-  margin: 20px 0 40px 0;
+  margin: 60px 0 40px 0;
   text-align: center;
-}
-
-.Weather .icon {
-  font-size: 80px;
 }
 
 .Weather .description {

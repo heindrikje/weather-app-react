@@ -17,6 +17,7 @@ export default function SearchForm(props) {
       wind: response.data.wind.speed,
       tempMin: Math.round(response.data.main.temp_min),
       tempMax: Math.round(response.data.main.temp_max),
+      icon: response.data.weather[0].icon,
     });
   }
 

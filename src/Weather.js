@@ -1,5 +1,6 @@
 import React from "react";
 import Date from "./Date";
+import WeatherIcon from "./WeatherIcon";
 import Forecast from "./Forecast";
 import ForecastIcon from "./ForecastIcon";
 import "./weather.css";
@@ -16,7 +17,9 @@ export default function Weather(props) {
           </div>
         </div>
         <div className="col-6 iconAndDescription">
-          <div className="icon">🌤</div>
+          <div className="icon">
+            <WeatherIcon code={props.data.icon} alt={props.data.description} />
+          </div>
           <div className="description text-capitalize">
             {props.data.description}
           </div>
