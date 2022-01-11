@@ -10,25 +10,25 @@ export default function Weather(props) {
       <div className="row">
         <div className="col-6">
           <div className="card mainInfo">
-            <h2>{props.info.city}</h2>
-            <h1>{props.info.temp}°C</h1>
-            <Date date={props.info.date} />
+            <h2>{props.data.city}</h2>
+            <h1>{props.data.temp}°C</h1>
+            <Date date={props.data.date} />
           </div>
         </div>
         <div className="col-6 iconAndDescription">
           <div className="icon">🌤</div>
           <div className="description text-capitalize">
-            {props.info.description}
+            {props.data.description}
           </div>
         </div>
       </div>
       <div className="row align-items-center">
         <div className="col-6 weatherDetails">
           <div>
-            {props.info.tempMin}° | <strong>{props.info.tempMax}</strong>°
+            {props.data.tempMin}° | <strong>{props.data.tempMax}</strong>°
           </div>
-          <div>Humidity: {props.info.humidity}%</div>
-          <div>Wind: {props.info.wind}km/h</div>
+          <div>Humidity: {props.data.humidity}%</div>
+          <div>Wind: {props.data.wind}km/h</div>
         </div>
         <div className="col-3 forecast">
           <Forecast />
