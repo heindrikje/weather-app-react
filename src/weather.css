@@ -20,6 +20,12 @@
   font-size: 18px;
 }
 
+.Weather .darkMode {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
 .Weather .forecast {
   padding: 0;
 }

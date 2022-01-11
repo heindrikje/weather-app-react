@@ -4,6 +4,7 @@ import Date from "./Date";
 import WeatherIcon from "./WeatherIcon";
 import Forecast from "./Forecast";
 import ForecastIcon from "./ForecastIcon";
+import DarkMode from "./DarkMode";
 import "./weather.css";
 
 export default function Weather(props) {
@@ -33,6 +34,9 @@ export default function Weather(props) {
           </div>
           <div>Humidity: {props.data.humidity}%</div>
           <div>Wind: {props.data.wind}km/h</div>
+          <div className="darkMode">
+            <DarkMode />
+          </div>
         </div>
         <div className="col-3 forecast">
           <Forecast />
