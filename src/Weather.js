@@ -30,7 +30,7 @@ export default function Weather(props) {
       <div className="row align-items-center">
         <div className="col-6 weatherDetails">
           <div>
-            {props.data.tempMin}° | <strong>{props.data.tempMax}</strong>°
+            <strong>{props.data.tempMax}</strong>° | {props.data.tempMin}°
           </div>
           <div>Humidity: {props.data.humidity}%</div>
           <div>Wind: {props.data.wind}km/h</div>

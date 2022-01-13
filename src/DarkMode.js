@@ -16,5 +16,3 @@ export default function DarkMode() {
     </div>
   );
 }
-
-//App card eigentlich background: #112d4e
