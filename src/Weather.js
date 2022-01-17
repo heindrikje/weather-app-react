@@ -20,7 +20,11 @@ export default function Weather(props) {
         </div>
         <div className="col-6 iconAndDescription">
           <div className="icon">
-            <WeatherIcon code={props.data.icon} alt={props.data.description} />
+            <WeatherIcon
+              code={props.data.icon}
+              alt={props.data.description}
+              size={100}
+            />
           </div>
           <div className="description text-capitalize">
             {props.data.description}
@@ -30,16 +34,16 @@ export default function Weather(props) {
       <div className="row align-items-center">
         <div className="col-6 weatherDetails">
           <div>
-            <strong>{props.data.tempMax}</strong>° | {props.data.tempMin}°
+            <strong>{props.data.tempMax}</strong>° / {props.data.tempMin}°
           </div>
           <div>Humidity: {props.data.humidity}%</div>
-          <div>Wind: {props.data.wind}km/h</div>
+          <div>Wind: {props.data.wind} km/h</div>
           <div className="darkMode">
             <DarkMode />
           </div>
         </div>
         <div className="col-3 forecast">
-          <Forecast />
+          <Forecast coordinates={props.data.coordinates} />
         </div>
         <div className="col-3 forecastIcon">
           <ForecastIcon />
