@@ -1,17 +1,18 @@
 import React from "react";
-import DarkModeToggle from "react-dark-mode-toggle";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 import useDarkMode from "use-dark-mode";
-import "./darkMode.css";
 
 export default function DarkMode() {
   const darkMode = useDarkMode(false);
 
   return (
     <div className="DarkMode">
-      <DarkModeToggle
+      <DarkModeSwitch
         checked={darkMode.value}
         onChange={darkMode.toggle}
-        size={50}
+        size={36}
+        moonColor="#5ea1e4"
+        sunColor="#153685"
       />
     </div>
   );

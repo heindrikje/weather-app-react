@@ -5,7 +5,26 @@
   background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   border-radius: 15px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: background-image 0.5s ease;
 }
+
+body.light-mode {
+  background-color: #e6f1f3;
+  color: #153685;
+  transition: background-color 0.5s ease;
+}
+body.dark-mode {
+  background-color: #01274c;
+  color: #5ea1e4;
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+body.dark-mode .App .card {
+  background-image: url(https://images.pexels.com/photos/2232979/pexels-photo-2232979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  transition: background-image 0.5s ease;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -15,13 +34,26 @@ footer {
   font-size: 12px;
   margin: 10px 0;
   text-align: center;
-  color: #7a90b9;
+  color: #153685;
+  transition: color 0.5s ease;
+}
+
+body.dark-mode footer {
+  color: #abc4e0;
+  transition: color 0.5s ease;
 }
 
 footer .link {
   text-decoration: none;
-  color: #5fb8ec;
+  color: #153685;
+  font-weight: bold;
+  transition: color 0.5s ease;
 }
 footer .link:hover {
   text-decoration: underline;
+}
+
+body.dark-mode footer .link {
+  color: #5ea1e4;
+  transition: color 0.5s ease;
 }

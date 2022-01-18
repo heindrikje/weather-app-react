@@ -12,6 +12,14 @@
   position: relative;
   top: 2px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: color 0.5s ease;
+}
+
+body.dark-mode .SearchForm .search-bar {
+  background: #193d60;
+  border: 1px solid #abc4e0;
+  color: #abc4e0;
+  transition: color 0.5s ease;
 }
 
 .SearchForm .btn {
@@ -23,8 +31,18 @@
   transition: all 150ms ease-in-out;
 }
 
+body.dark-mode .SearchForm .btn {
+  color: #abc4e0;
+  background: #193d60;
+  border: 1px solid #abc4e0;
+}
+
 .SearchForm .btn:hover {
-  opacity: 0.8;
   background: #153685;
   color: #fdffff;
+}
+
+body.dark-mode .SearchForm .btn:hover {
+  background: #abc4e0;
+  color: #193d60;
 }

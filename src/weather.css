@@ -3,6 +3,11 @@
   border: 2px solid #153685;
 }
 
+body.dark-mode .Weather .mainInfo {
+  border: 2px solid #abc4e0;
+  transition: color 0.5s ease;
+}
+
 .Weather .iconAndDescription {
   margin: 60px 0 40px 0;
   text-align: center;
@@ -21,16 +26,13 @@
   font-size: 18px;
 }
 
+.Weather .forecast,
+.Weather .forecastIcon {
+  padding: 0;
+}
+
 .Weather .darkMode {
   position: absolute;
   left: 20px;
   bottom: 20px;
-}
-
-.Weather .forecast {
-  padding: 0;
-}
-
-.Weather .forecastIcon {
-  padding: 0;
 }

@@ -6,3 +6,7 @@
 .Forecast {
   border-left: 2px solid #153685;
 }
+
+body.dark-mode .Forecast {
+  border-left: 2px solid #abc4e0;
+}
