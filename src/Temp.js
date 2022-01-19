@@ -44,3 +44,5 @@ export default function Temp(props) {
     );
   }
 }
+
+// global state management, wenn man fahrenheit auch im forecast anzeigen will

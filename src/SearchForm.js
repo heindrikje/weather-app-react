@@ -11,6 +11,7 @@ export default function SearchForm(props) {
     setInfo({
       loaded: true,
       city: response.data.name,
+      country: response.data.sys.country,
       date: new Date(response.data.dt * 1000),
       temp: Math.round(response.data.main.temp),
       description: response.data.weather[0].description,

@@ -3,7 +3,6 @@ import Temp from "./Temp";
 import Date from "./Date";
 import WeatherIcon from "./WeatherIcon";
 import Forecast from "./Forecast";
-import ForecastIcon from "./ForecastIcon";
 import DarkMode from "./DarkMode";
 import "./weather.css";
 
@@ -13,7 +12,9 @@ export default function Weather(props) {
       <div className="row">
         <div className="col-6">
           <div className="card mainInfo">
-            <h2>{props.data.city}</h2>
+            <h2>
+              {props.data.city}, {props.data.country}
+            </h2>
             <Temp celsius={props.data.temp} />
             <Date date={props.data.date} />
           </div>
@@ -42,13 +43,12 @@ export default function Weather(props) {
             <DarkMode />
           </div>
         </div>
-        <div className="col-3 forecast">
+        <div className="col-6 forecast">
           <Forecast coordinates={props.data.coordinates} />
-        </div>
-        <div className="col-3 forecastIcon">
-          <ForecastIcon />
         </div>
       </div>
     </div>
   );
 }
+
+//pressure, visibility (?), clouds (?), sunrise/sunset
