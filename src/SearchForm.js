@@ -16,7 +16,8 @@ export default function SearchForm(props) {
       temp: Math.round(response.data.main.temp),
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
-      wind: response.data.wind.speed,
+      wind: Math.round(response.data.wind.speed * 3.6),
+      clouds: response.data.clouds.all,
       tempMin: Math.round(response.data.main.temp_min),
       tempMax: Math.round(response.data.main.temp_max),
       icon: response.data.weather[0].icon,
@@ -39,6 +40,26 @@ export default function SearchForm(props) {
     search();
   }
 
+  function showPosition(position) {
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+    let apiKey = "3b805b8ea6935d84ecc7cdd3c562894e";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(showInfo);
+    let reverseApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
+    axios.get(reverseApiUrl).then(updateCity);
+  }
+
+  function getCurrentLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      alert(
+        "Sorry, we couldn't find your current position. Please type your city, instead."
+      );
+    }
+  }
+
   if (info.loaded) {
     return (
       <div className="SearchForm">
@@ -58,7 +79,10 @@ export default function SearchForm(props) {
               className="btn search-button"
             />
           </form>
-          <button className="btn current-location-button">
+          <button
+            className="btn current-location-button"
+            onClick={getCurrentLocation}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

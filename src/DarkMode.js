@@ -12,7 +12,7 @@ export default function DarkMode() {
         onChange={darkMode.toggle}
         size={36}
         moonColor="#5ea1e4"
-        sunColor="#153685"
+        sunColor="#5ea1e4"
       />
     </div>
   );

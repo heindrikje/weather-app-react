@@ -8,8 +8,12 @@ body.dark-mode .Weather .mainInfo {
   transition: color 0.5s ease;
 }
 
+.Weather .tempMinMax {
+  padding-bottom: 10px;
+}
+
 .Weather .iconAndDescription {
-  margin: 60px 0 40px 0;
+  margin: 50px 0 40px 0;
   text-align: center;
 }
 
@@ -23,7 +27,7 @@ body.dark-mode .Weather .mainInfo {
   margin-bottom: 15px;
   text-align: center;
   line-height: 45px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .Weather .forecast,
