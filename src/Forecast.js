@@ -12,8 +12,8 @@ export default function Forecast(props) {
   }, [props.coordinates]);
 
   function handleResponse(response) {
-    setLoaded(true);
     setForecast(response.data.daily);
+    setLoaded(true);
   }
 
   function load() {

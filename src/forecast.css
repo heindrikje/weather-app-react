@@ -1,8 +1,3 @@
-.Forecast .forecastDay {
-  text-align: center;
-  margin: 0 0 12px 50px;
-  font-size: 14px;
-}
 .Forecast {
   border-left: 2px solid #153685;
 }
