@@ -23,18 +23,18 @@ body.dark-mode .SearchForm .search-bar {
 }
 
 .SearchForm .btn {
-  color: #153685;
   background: #fdffff;
   border: 1px solid #153685;
+  color: #153685;
   margin: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   transition: all 150ms ease-in-out;
 }
 
 body.dark-mode .SearchForm .btn {
-  color: #abc4e0;
   background: #193d60;
   border: 1px solid #abc4e0;
+  color: #abc4e0;
 }
 
 .SearchForm .btn:hover {

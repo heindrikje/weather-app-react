@@ -1,11 +1,6 @@
-.App .card {
-  max-width: 600px;
-  margin: 30px auto 10px auto;
-  padding: 20px;
-  background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  border-radius: 15px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  transition: background-image 0.5s ease;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 body.light-mode {
@@ -17,7 +12,16 @@ body.dark-mode {
   background-color: #01274c;
   color: #5ea1e4;
   transition: background-color 0.5s ease;
-  transition: color 0.5s ease;
+}
+
+.App .card {
+  max-width: 600px;
+  margin: 30px auto 10px auto;
+  padding: 20px;
+  background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: background-image 0.5s ease;
 }
 
 body.dark-mode .App .card {
@@ -25,35 +29,29 @@ body.dark-mode .App .card {
   transition: background-image 0.5s ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-footer {
+.App footer {
   font-size: 12px;
   margin: 10px 0;
   text-align: center;
-  color: #153685;
   transition: color 0.5s ease;
 }
 
-body.dark-mode footer {
+body.dark-mode .App footer {
   color: #abc4e0;
   transition: color 0.5s ease;
 }
 
-footer .link {
+.App footer .link {
   text-decoration: none;
   color: #153685;
   font-weight: bold;
   transition: color 0.5s ease;
 }
-footer .link:hover {
+.App footer .link:hover {
   text-decoration: underline;
 }
 
-body.dark-mode footer .link {
+body.dark-mode .App footer .link {
   color: #5ea1e4;
   transition: color 0.5s ease;
 }

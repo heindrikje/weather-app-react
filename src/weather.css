@@ -5,11 +5,25 @@
 
 body.dark-mode .Weather .mainInfo {
   border: 2px solid #abc4e0;
-  transition: color 0.5s ease;
+}
+
+.Weather h1 {
+  font-size: 50px;
+  display: inline;
+  line-height: 70px;
+}
+
+.Weather .celsius {
+  font-size: 20px;
+  position: relative;
+  top: -20px;
+  left: 3px;
 }
 
 .Weather .tempMinMax {
-  padding-bottom: 10px;
+  position: relative;
+  left: 25px;
+  bottom: 10px;
 }
 
 .Weather .iconAndDescription {
@@ -26,17 +40,16 @@ body.dark-mode .Weather .mainInfo {
   padding: 0;
   margin-bottom: 15px;
   text-align: center;
-  line-height: 45px;
+  line-height: 40px;
   font-size: 16px;
 }
 
-.Weather .forecast,
-.Weather .forecastIcon {
-  padding: 0;
-}
-
-.Weather .darkMode {
+.Weather .DarkMode {
   position: absolute;
   left: 20px;
   bottom: 20px;
+}
+
+.Weather .forecast {
+  padding: 0;
 }

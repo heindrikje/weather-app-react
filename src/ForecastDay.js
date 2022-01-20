@@ -1,5 +1,4 @@
 import React from "react";
-import "./forecastDay.css";
 import WeatherIcon from "./WeatherIcon";
 
 export default function ForecastDay(props) {

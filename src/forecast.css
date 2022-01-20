@@ -5,3 +5,9 @@
 body.dark-mode .Forecast {
   border-left: 2px solid #abc4e0;
 }
+
+.Forecast .ForecastDay {
+  text-align: center;
+  margin: 0 30px 12px 30px;
+  font-size: 14px;
+}

@@ -14,13 +14,13 @@ export default function SearchForm(props) {
       country: response.data.sys.country,
       date: new Date(response.data.dt * 1000),
       temp: Math.round(response.data.main.temp),
+      tempMin: Math.round(response.data.main.temp_min),
+      tempMax: Math.round(response.data.main.temp_max),
+      icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed * 3.6),
       clouds: response.data.clouds.all,
-      tempMin: Math.round(response.data.main.temp_min),
-      tempMax: Math.round(response.data.main.temp_max),
-      icon: response.data.weather[0].icon,
       coordinates: response.data.coord,
     });
   }
@@ -30,7 +30,7 @@ export default function SearchForm(props) {
   }
 
   function search() {
-    const apiKey = "3b805b8ea6935d84ecc7cdd3c562894e";
+    let apiKey = "3b805b8ea6935d84ecc7cdd3c562894e";
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(url).then(showInfo);
   }
@@ -72,17 +72,9 @@ export default function SearchForm(props) {
               autoFocus="on"
               onChange={updateCity}
             />
-
-            <input
-              type="submit"
-              value="Search "
-              className="btn search-button"
-            />
+            <input type="submit" value="Search" className="btn" />
           </form>
-          <button
-            className="btn current-location-button"
-            onClick={getCurrentLocation}
-          >
+          <button className="btn" onClick={getCurrentLocation}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
