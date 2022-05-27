@@ -18,7 +18,7 @@ export default function App() {
           >
             Open-source code
           </a>{" "}
-          by Heindrikje Kuhs
+          by kathi-hk
         </footer>
       </div>
     </div>
